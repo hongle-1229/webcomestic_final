@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/giohang.css" />
+    <!-- Link CDN font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-header">
+        <div class="logo-header">
+          <a href="#"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="menu-trangchu">
+          <a href="/index.html">Home</a>
+          <a href="/html/product.html">Products</a>
+          <a href="/html/about.html"> About </a>
+          <a href="/html/contact.html"> Contact </a>
+        </div>
+
+        <div class="icon-trangchu">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <a class="icon1" href="giohang.html">
+          <i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <div class="icon-trangchu">
+          <a href="/html/dangnhap.html"> <i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- End of header -->
+
+    <section class="giohang">
+      <div class="tong">
+        <div class="thongtinsanpham">
+          <p class="sanpham">SẢN PHẨM</p>
+          <p class="value">GIÁ</p>
+          <p class="soluong">SỐ LƯỢNG</p>
+        </div>
+        <div class="giohangcuaban">
+          <div id="sanpham1">
+            <div class="khoisanpham">
+              <img
+                src="/img/29.png"
+                style="height: 174px; width: 174px"
+                alt="photo"
+              />
+              <p class="tensanpham">
+                NƯỚC TẨY TRANG<br />
+                EFFACLAR MICELLAR 400ML
+              </p>
+            </div>
+            <p id="giasanpham">₫ 479,000</p>
+            <div class="soluongsanpham">
+              <button class="quantity-button" onclick="decreaseQuantity()">
+                -
+              </button>
+              <input
+                type="text"
+                class="quantity-input"
+                value="1"
+                id="quantity"
+              />
+              <button class="quantity-button" onclick="increaseQuantity()">
+                +
+              </button>
+            </div>
+
+            <!-- tang giam so luong san pham va gia san pham -->
+
+            <script>
+              var giagoc = 479000;
+              var quantityInput = document.getElementById("quantity");
+              var giaInput = document.getElementById("giasanpham");
+
+              // thay doi gia san pham theo so luong
+              function giatong() {
+                var currentQuantity = parseInt(quantityInput.value, 10);
+                var totalPrice = giagoc * currentQuantity;
+                giaInput.textContent = "₫ " + giaOutput(totalPrice);
+              }
+              //tang giam so luong san pham
+              function increaseQuantity() {
+                var currentQuantity = parseInt(quantityInput.value, 10);
+                quantityInput.value = currentQuantity + 1;
+                giatong();
+              }
+
+              function decreaseQuantity() {
+                var currentQuantity = parseInt(quantityInput.value, 10);
+                if (currentQuantity > 1) {
+                  quantityInput.value = currentQuantity - 1;
+                  giatong();
+                }
+              }
+              function giaOutput(amount) {
+                return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // hien thi format tien VN
+              }
+              //goi lai 'giatong' de khi tai lai trang web, gia san pham hien thi nhu ban dau
+              giatong();
+            </script>
+
+            <!-- button xoa san pham -->
+            <div class="delete-div" onclick="deleteProduct('sanpham1')">
+              <img src="/img/del.png" style="height: 50px" alt="delete" />
+            </div>
+            <script>
+              function deleteProduct(productId) {
+                var element = document.getElementById(productId);
+                if (element) {
+                  element.remove();
+                }
+              }
+            </script>
+          </div>
+
+          <div id="sanpham2">
+            <div class="khoisanpham2">
+              <img
+                src="/img/32.png"
+                style="height: 174px; width: 174px"
+                alt="photo"
+              />
+              <p class="tensanpham2">
+                DƯỠNG CHẤT<br />
+                HYALU B5 30ML
+              </p>
+            </div>
+            <p id="giasanpham2">₫ 809,000</p>
+            <div class="soluongsanpham2">
+              <button class="quantity-button2" onclick="decreaseQuantity2()">
+                -
+              </button>
+              <input
+                type="text"
+                class="quantity-input2"
+                value="1"
+                id="quantity2"
+              />
+              <button class="quantity-button2" onclick="increaseQuantity2()">
+                +
+              </button>
+            </div>
+
+            <!-- tang giam so luong san pham va gia san pham -->
+
+            <script>
+              var giagoc2 = 809000;
+              var quantityInput2 = document.getElementById("quantity2");
+              var giaInput2 = document.getElementById("giasanpham2");
+
+              // thay doi gia san pham theo so luong
+              function giatong2() {
+                var currentQuantity2 = parseInt(quantityInput2.value, 10);
+                var totalPrice2 = giagoc2 * currentQuantity2;
+                giaInput2.textContent = "₫ " + giaOutput2(totalPrice2);
+              }
+              //tang giam so luong san pham
+              function increaseQuantity2() {
+                var currentQuantity2 = parseInt(quantityInput2.value, 10);
+                quantityInput2.value = currentQuantity2 + 1;
+                giatong2();
+              }
+
+              function decreaseQuantity2() {
+                var currentQuantity2 = parseInt(quantityInput2.value, 10);
+                if (currentQuantity2 > 1) {
+                  quantityInput2.value = currentQuantity2 - 1;
+                  giatong2();
+                }
+              }
+              function giaOutput2(amount) {
+                return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // hien thi format tien VN
+              }
+              //goi lai 'giatong' de khi tai lai trang web, gia san pham hien thi nhu ban dau
+              giatong2();
+            </script>
+
+            <!-- button xoa san pham -->
+            <div class="delete-div2" onclick="deleteProduct2('sanpham2')">
+              <img src="/img/del.png" style="height: 50px" alt="delete" />
+            </div>
+            <script>
+              function deleteProduct2(productId) {
+                var element = document.getElementById(productId);
+                if (element) {
+                  element.remove();
+                }
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Section Giohang-->
+
+    <section class="tongthanhtoan">
+      <div class="left">
+        <label for="magiamgia">Mã giảm giá:</label><br /><br />
+        <input
+          type="text"
+          id="magiam"
+          name="magiamgia"
+          placeholder="Mã giảm giá"
+        />
+        <button id="gui">Nhập</button>
+      </div>
+      <div class="righttren">
+        <p>Tổng giá trị sản phẩm: ₫ 1,288,000</p>
+        <p>Phí vận chuyển: ₫ 30,000</p>
+        <p>Mã giảm giá: ₫ 0</p>
+        <h3>Tổng ₫ 1,318,000</h3>
+
+        <!-- Nút mở trang thanh toán -->
+        <button class="thanhtoan" onclick="motrangthanhtoan()">
+          Thanh toán
+        </button>
+
+        <!-- Modal -->
+
+        <div class="modal" id="motrang">
+          <span class="close-button" onclick="dongtrangthanhtoan()"
+            >&times;</span
+          >
+          <div class="modal-content">
+            <!-- Nội dung của trang thanh toan -->
+            <div class="left-thanhtoan">
+              <div class="thanhtoanvaanh">
+                <h2>Thanh toán</h2>
+                <img
+                  class="anhto"
+                  src="/img/Paper money or dollar bills and blue credit card 3D illustration 1.png"
+                  style="height: 200px;" alt="cart"
+                />
+              </div>
+              <div id="thongtinsanpham11">
+                <p id="sanpham111">SẢN PHẨM</p>
+                <p id="value111">GIÁ</p>
+                <p id="soluong111">SỐ LƯỢNG</p>
+              </div>
+              <div id="giohangcuaban11">
+                <div class="sanpham11">
+                  <div id="khoisanpham11">
+                    <img
+                      src="/img/29.png"
+                      style="height: 120px; width: 120px"
+                      alt="photo"
+                    />
+                    <p id="tensanpham11">
+                      NƯỚC TẨY TRANG<br />
+                      EFFACLAR MICELLAR 400ML
+                    </p>
+                    <p class="giasanpham11">₫ 479,000</p>
+                    <p id="soluongsanpham11">1</p>
+                  </div>
+                </div>
+                <div id="sanpham22">
+                  <div class="khoisanpham22">
+                    <img
+                      src="/img/32.png"
+                      style="height: 120px; width: 120px"
+                      alt="photo"
+                    />
+                    <p id="tensanpham22">
+                      DƯỠNG CHẤT<br />
+                      HYALU B5 30ML
+                    </p>
+                    <p id="giasanpham22">₫ 809,000</p>
+                    <p id="soluong22">1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tongphaithanhtoan">
+                <p>Tổng giá trị sản phẩm: ₫ 1,288,000</p>
+                <p>Phí vận chuyển: ₫ 30,000</p>
+                <p>Mã giảm giá: ₫ 0</p>
+                <h3>Tổng ₫ 1,318,000</h3>
+              </div>
+            </div>
+
+            <div class="right-thanhtoan">
+              <b>Kiểm tra</b>
+              <p class="cungcap">
+                Cung cấp cho tôi thông tin tài khoản của bạn. Chúng tôi cam
+                kết<br />
+                bảo mật mọi thông tin bạn cung cấp.
+              </p>
+              <b>Card Type</b>
+              <div class="cart">
+                <div class="anh1">
+                  <img src="/img/Visa_Inc._logo 1.png" alt="visa" />
+                </div>
+                <div class="anh2">
+                  <img src="/img/Mastercard-Logo 1.png" alt="master" />
+                </div>
+              </div>
+              <label for="tenchuthe"><b>Tên chủ thẻ:</b></label
+              ><br />
+              <input type="text" name="tenchuthe" id="tenchuthe" /><br />
+              <label for="sothe"><b>Số thẻ:</b></label
+              ><br />
+              <input type="tel" for="sothe" id="sothe" /><br />
+              <div class="hanthevacode">
+                <div class="hanthe">
+                  <label for="hancuathe"><b>Hạn của thẻ:</b></label
+                  ><br />
+                  <input
+                    type="datetime-local"
+                    name="hancuathe"
+                    id="hancuathe"
+                  />
+                </div>
+                <div class="cvvcode">
+                  <label for="cvv"><b>CVV Code</b></label
+                  ><br />
+                  <input type="text" for="cvv" id="cvv" />
+                </div>
+              </div>
+              <button id="thanhtoanthoi">
+                <b>Thanh toán: ₫ 1,318,000</b>
+              </button>
+
+              <script>
+                // Lấy đối tượng button bằng ID
+                var button = document.getElementById('thanhtoanthoi');
+
+                // Thêm sự kiện click vào button
+                button.addEventListener('click', function() {
+                    // Hiển thị hộp thoại khi nhấn vào button
+                    alert('Thanh toán thành công. Hãy theo dõi đơn hàng của bạn.');
+                });
+            </script> 
+              <div class="khoathongtin">
+                <i class="fa-solid fa-lock"></i>
+                <p>Chúng tôi cam kết bảo mật thông tin tài khoản của bạn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript để xử lý mở và đóng modal -->
+        <script>
+          function motrangthanhtoan() {
+            var modal = document.getElementById("motrang");
+            modal.style.display = "flex";
+          }
+
+          function dongtrangthanhtoan() {
+            var modal = document.getElementById("motrang");
+            modal.style.display = "none";
+          }
+
+          // Đóng modal khi người dùng nhấp ra ngoài modal
+          window.onclick = function (event) {
+            var modal = document.getElementById("motrang");
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        </script>
+
+        <!-- <script>
+                var tonggiatri=0;
+                function themsanpham(totalPrice2, totalPrice1){
+                    tonggiatri = totalPrice1 +totalPrice2;
+                    hienthitongthanhtoan();
+                }
+                function hienthitongthanhtoan(){
+                    var tonggiatrisanpham =document.getElementById(giaInput);
+                    tonggiatrisanpham.textContent = "₫ " + hienthi(tonggiatrisanpham);
+                }
+                function hienthi(amount){
+                    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+                themsanpham();
+            </script> -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <a href="#"><img src="/img/logo.png" alt="" /></a>
+          </div>
+          <p>
+            Là nhãn hiệu tiên phong trong việc đem lại những <br />
+            đột phá trong lĩnh vực da liễu, La Roche-Posay <br />
+            đem đến cho bạn những dòng sản phẩm đã được <br />
+            thử nghiệm da liễu và được bào chế dành cho làn <br />
+            da nhạy cảm nhất.
+          </p>
+          <div class="icon-footer">
+            <img src="/img/image (1) 1.png" alt="icon" />
+          </div>
+        </div>
+
+        <div class="links-container">
+          <h4>Về LAROCHEPOSAY</h4>
+
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>CÔNG TY TNHH L'OREAL VIỆT NAM</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Valery Gaucherand</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Tầng 10, Tòa nhà Vincom, Số 45A đường Lý Tự Trọng
+                <br />
+                và số 72 đường Lê Thánh Tôn, P.Bến Nghé, Q.1, Tp.HCM
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: lorealvietnam@loreal.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of footer -->
+  </body>
+</html>

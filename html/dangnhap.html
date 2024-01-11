@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <link rel="stylesheet" href="/css/dangnhap.css" />
+    <!-- Link CDN font Awesome -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CDN Ionicons -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper-header">
+        <div class="logo-header">
+          <a href="#"><img src="/img/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="menu-trangchu">
+          <a href="/index.html">Home</a>
+          <a href="/html/product.html">Products</a>
+          <a href="/html/about.html"> About </a>
+          <a href="/html/contact.html"> Contact </a>
+        </div>
+
+        <div class="icon-trangchu">
+          <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="/html/giohang.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a class="menu1" href="/html/dangnhap.html"> <i class="fa-regular fa-user"></i></a>
+      </div>
+    </header>
+    <!-- Header End-->
+
+    <div class="hello">LAROCHEPOSAY, xin chào!</div>
+
+    <div class="wrapper">
+      <div class="form">
+        <h1>Đăng nhập</h1>
+        <h5>Tên đăng nhập:</h5>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your username " required />
+          <div class="icon-web">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.7205 8.93563C11.2891 8.93563 13.3714 7.089 13.3714 4.81108C13.3714 2.53315 11.2891 0.686523 8.7205 0.686523C6.15189 0.686523 4.06961 2.53315 4.06961 4.81108C4.06961 7.089 6.15189 8.93563 8.7205 8.93563Z"
+                fill="#C8E3FF"
+              />
+              <path
+                d="M8.72049 10.998C4.06026 10.998 0.265137 13.7697 0.265137 17.1849C0.265137 17.4159 0.469776 17.5973 0.730225 17.5973H16.7107C16.9712 17.5973 17.1758 17.4159 17.1758 17.1849C17.1758 13.7697 13.3807 10.998 8.72049 10.998Z"
+                fill="#C8E3FF"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <h5>Mật khẩu:</h5>
+        <div class="input-box">
+          <input
+            type="password"
+            id="password"
+            placeholder="****************"
+            required
+          />
+          <div id="hide-password" class="icon-web" onclick="toggle()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.237 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57694 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.237 15.1157ZM9.39306 10.5144C9.14293 10.9524 9 11.4595 9 12C9 13.6569 10.3431 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36426 18 5.23205 14.7899 3.81196 13.0657C3.4238 12.5944 3.22972 12.3588 3.22972 12C3.22972 11.6412 3.4238 11.4056 3.81196 10.9343C4.48539 10.1167 5.54383 8.96489 6.85841 7.97974L9.39306 10.5144Z"
+                fill="#C8E3FF"
+              />
+              <path d="M5 2L21 18" stroke="#C8E3FF" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var passwordInput = document.getElementById("password");
+            var eyeIcon = document.getElementById("hide-password");
+            eyeIcon.addEventListener("click", function () {
+              if (passwordInput.type == "password") {
+                passwordInput.type = "text";
+              } else {
+                passwordInput.type = "password";
+              }
+            });
+          });
+          </script>
+          <script>
+            const passwordBtn = document.querySelector("#hide-password");
+        
+            passwordBtn.addEventListener("click", function () {
+              if (
+                passwordBtn.innerHTML.trim() === '<img src="/img/View_hide_fill.png">'
+              ) {
+                passwordBtn.innerHTML = '<img src="/img/View_fill.png">';
+              } else {
+                passwordBtn.innerHTML = '<img src="/img/View_hide_fill.png">';
+              }
+            });
+          </script>
+        </html>
+        <div class="Remember-Forgot">
+          <label> <input type="checkbox" />
+           
+             <span class="Luumk"> Lưu mật khẩu </span> </label>
+          <span>Quên mật khẩu </span>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="228"
+          height="3"
+          viewBox="0 0 228 3"
+          fill="none"
+        >
+          <path
+            d="M1 1.27344H226.476"
+            stroke="#C8E3FF"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span style="color: #7bbcfc;font-size: 10px;">or</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="228"
+          height="3"
+          viewBox="0 0 228 3"
+          fill="none"
+        >
+          <path
+            d="M1 1.27344H226.476"
+            stroke="#C8E3FF"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          ></path>
+        </svg>
+        <div class="mui-z-index">
+            <i class="fa-solid fa-g"></i>
+        </div>
+        <button type="submit" class="btn"><a class="dangnhap" href="/html/myaccount.html">Đăng nhập</a></button>
+        <br />
+        <div class="register-link">
+          <p>Bạn chưa có tài khoản, hãy <a href="/html/dangki.html">Đăng ký</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="wrapper-footer">
+          <div class="block1">
+            <div class="logo-footer">
+              <a href="#"><img src="/img/logo.png" alt="" /></a>
+            </div>
+            <p>
+              Là nhãn hiệu tiên phong trong việc đem lại những <br />
+              đột phá trong lĩnh vực da liễu, La Roche-Posay <br />
+              đem đến cho bạn những dòng sản phẩm đã được <br />
+              thử nghiệm da liễu và được bào chế dành cho làn <br />
+              da nhạy cảm nhất.
+            </p>
+            <div class="icon-footer">
+              <img src="/img/image (1) 1.png" alt="icon" />
+            </div>
+          </div>
+  
+          <div class="links-container">
+            <h4>Về LAROCHEPOSAY</h4>
+  
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Product</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="chinhsach">
+            <h4>Chính sách</h4>
+  
+            <ul>
+              <li>
+                <a href="#">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a href="#"> Chính sách vận chuyển</a>
+              </li>
+              <li>
+                <a href="#"> Chính sách đổi trả</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="lienhe">
+            <h4>Liên hệ với chúng tôi</h4>
+  
+            <ul>
+              <li>
+                <p>CÔNG TY TNHH L'OREAL VIỆT NAM</p>
+              </li>
+  
+              <li>
+                <p>Người đại diện: Valery Gaucherand</p>
+              </li>
+  
+              <li>
+                <p>
+                  Địa chỉ: Tầng 10, Tòa nhà Vincom, Số 45A đường Lý Tự Trọng
+                  <br />
+                  và số 72 đường Lê Thánh Tôn, P.Bến Nghé, Q.1, Tp.HCM
+                </p>
+              </li>
+  
+              <li>
+                <p>Điện thoại: 02839369142</p>
+              </li>
+  
+              <li>
+                <p>Email: lorealvietnam@loreal.com</p>
+              </li>
+  
+              <li>
+                <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="follow-container">
+            <div class="follow">
+              <h4>Theo dõi chúng tôi tại:</h4>
+            </div>
+            <div class="icon">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- End of footer -->
+    </body>
+  </html>
+  

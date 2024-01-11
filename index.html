@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- Link CDN font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CDN Ionicons -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="/JS/vidu.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-header">
+        <div class="logo-header">
+          <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+
+        <a class="menu1" href="/index.html">Home</a>
+        <div class="menu-trangchu">
+          <a href="/html/product.html">Products</a>
+          <a href="/html/about.html"> About </a>
+          <a href="/html/contact.html"> Contact </a>
+          
+        </div>
+
+        <div class="icon-trangchu">
+          <a id="timkiemsanpham" onclick="mocuasotimkiem()" href="/html/timkiem.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <!-- Tao noi dung thanh tim kiem -->
+          <div class="modal" id="cuasotimkiem">
+            <div class="modal-content">
+              <span class="close-button" onclick="dongcuasotimkiem()">&times;</span>
+              <!-- Nội dung của cua so tim kiem sẽ ở đây -->
+              <div class="cuasotimkiem1">
+                <img src="/img/logo.png" alt="logo">
+                <label for="timkiem"></label>
+                <input type="text" name="timkiem" id="timkiem" placeholder="Tìm kiếm">
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript để xử lý mở và đóng thanh tìm kiếm -->
+          <script>
+            function mocuasotimkiem() {
+              var modal = document.getElementById('cuasotimkiem');
+              modal.style.display = 'flex';
+            }
+        
+            function dongcuasotimkiem() {
+              var modal = document.getElementById('cuasotimkiem');
+              modal.style.display = 'none';
+            }
+        
+            // Đóng modal khi người dùng nhấp ra ngoài modal
+            window.onclick = function(event) {
+              var modal = document.getElementById('cuasotimkiem');
+              if (event.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+          </script>
+
+          <a href="/html/giohang.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/html/dangnhap.html"> <i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- End of header -->
+
+    <section class="section1-trangchu">
+      <div class="wrapper-section1-trangchu">
+        <div class="left-section1">
+          <div class="tieude-trangchu">
+            <h1>
+              E F F A C L A R <br />
+              S P O T S C A N
+            </h1>
+          </div>
+
+          <div class="text-section1-trangchu">
+            <p>
+              EFFACLAR SPOTSCAN là ứng dụng phân tích <br />
+              mụn sử dụng trí thông minh nhân tạo được phát <br />
+              triển bởi chuyên gia chăm sóc da hàng đầu trên <br />
+              toàn thế giới. EFFACLAR SPOTSCAN có thể chẩn <br />
+              đoán được nhiều loại da và tình trạng mụn ở các <br />
+              cấp độ nghiêm trọng khác nhau.
+            </p>
+          </div>
+
+          <button class="thungay-section1">
+            <a href="/html/thungay.html">THỬ NGAY</a>
+          </button>
+        </div>
+
+        <div class="right-section1" style="height: 737px">
+          <img src="img/hero-photo.png" alt="photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- End of section1 trangchu -->
+
+    <section class="section2-trangchu">
+      <div class="wrapper-section2-trangchu">
+        <div class="left-section2">
+          <img src="img/42dc969ff275e56c8e0d13e1698a4b3e 1.png" alt="photo" />
+        </div>
+
+        <div class="right-section2">
+          <div class="tieude-section2">
+            <h2>
+              SỨC KHỎE TỐT NHẤT<br />
+              CHO LÀN DA NHẠY CẢM
+            </h2>
+          </div>
+
+          <button class="khampha-section2">
+            <a href="./html/khampha.html">KHÁM PHÁ</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--End of test section2 trangchu -->
+
+    <section class="section3-trangchu">
+      <div class="wrapper-section3-trangchu">
+        <div class="tieude-section3">
+          <h2>
+            KHÁM PHÁ <br />
+            CÁC SẢN PHẨM NỔI BẬT
+          </h2>
+        </div>
+
+        <div class="list-products">
+          <div class="product">
+            <div class="xepanh">
+              <div class="anhnen">
+                <img
+                  src="./img/09e1dc90ec23edcd2f01e1a4ffbff765 1 (1).png"
+                  style="width: 365px; height: 461px"
+                  alt="anhnen1"
+                />
+                <img
+                  class="image-item"
+                  src="/img/product-1.png"
+                  style="width: 142px; height: 372px"
+                  alt="anhsanpham1"
+                />
+              </div>
+              <div class="tieude-sanpham">
+                <h4>
+                  EFFACLAR<br />
+                  DUO+ M
+                </h4>
+                <p>
+                  Giảm mụn, ngừa thâm và ngăn ngừa mụn tái phát. EFFACLAR DUO(+)
+                  M cho thấy hiệu quả rõ rệt trên các đốm mụn ngay sau 8 giờ.
+                </p>
+                <button class="timhieu-product">
+                  <a href="#">Tìm hiểu</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="xepanh">
+              <div class="anhnen">
+                <img
+                  src="./img/09e1dc90ec23edcd2f01e1a4ffbff765 1 (1).png"
+                  style="width: 365px; height: 461px"
+                  alt="anhnen1"
+                />
+                <img
+                  class="image-item"
+                  src="/img/product-1 (1).png"
+                  style="width: 142px; height: 372px"
+                  alt="anhsanpham1"
+                />
+              </div>
+              <div class="tieude-sanpham">
+                <h4>
+                  EFFACLAR<br />
+                  PURIFYING FOAMING GEL
+                </h4>
+                <p>
+                  Đặc biệt thích hợp trên làn da dầu mụn. Không cồn, không gây
+                  mụn, không có ethanol. Thích hợp cho da nhạy cảm.
+                </p>
+                <button class="timhieu-product">
+                  <a href="#">Tìm hiểu</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="xepanh">
+              <div class="anhnen">
+                <img
+                  src="./img/09e1dc90ec23edcd2f01e1a4ffbff765 1 (1).png"
+                  style="width: 365px; height: 461px"
+                  alt="anhnen1"
+                />
+                <img
+                  class="image-item"
+                  src="/img/product-1 (2).png"
+                  style="width: 142px; height: 372px"
+                  alt="anhsanpham1"
+                />
+              </div>
+              <div class="tieude-sanpham">
+                <h4>
+                  EFFACLAR<br />
+                  MICELLAR WATER
+                </h4>
+                <p>
+                  Giúp làm sạch sâu, loại bỏ cặn bẩn, bã nhờn và lớp trang điểm
+                  một cách nhẹ nhàng, đem lại cảm giác sạch và tươi mát trên da.
+                </p>
+                <button class="timhieu-product">
+                  <a href="#">Tìm hiểu</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--End of section3 trangchu -->
+
+    <section class="section4-trangchu">
+      <div class="wrapper-section4-trangchu">
+        <div class="tieude-section4">
+          <h2>
+            CAM KẾT <br />
+            AN TOÀN CỦA CHÚNG TÔI
+          </h2>
+        </div>
+
+        <div class="commit-section">
+          <div class="commit">
+            <img
+              src="img/7298c417034f492a114ba0988344b489 1.png"
+              style="width: 306.804px; height: 408.88px"
+              alt="photo"
+            />
+            <div class="text1-commit-section">
+              <h4>
+                ĐÃ KIỂM TRA<br />
+                TRÊN DA SIÊU NHẠY CẢM
+              </h4>
+            </div>
+          </div>
+
+          <div class="commit">
+            <img
+              src="img/296652300_5546903998665346_4939771032534056524_n_3af97620366049a094f4fbe9777b98e1 1.png"
+              style="width: 304.825px; height: 408.88px"
+              alt="photo"
+            />
+            <div class="text2-commit-section">
+              <h4>
+                CÔNG THỨC BẢO VỆ<br />
+                THEO THỜI GIAN
+              </h4>
+            </div>
+          </div>
+
+          <div class="commit">
+            <img
+              src="img/Hyalu-B5-3 1.png"
+              style="width: 304.825px; height: 408.88px"
+              alt="photo"
+            />
+            <div class="text3-commit-section">
+              <h4>
+                LÀ SẢN PHẨM THIẾT YẾU<br />
+                VỚI LIỀU DÙNG CHUẨN
+              </h4>
+            </div>
+          </div>
+
+          <div class="commit">
+            <img
+              src="img/fca8d714ff5b6d503ca741c5984cec1a 1.png"
+              style="width: 316.701px; height: 408.88px"
+              alt="photo"
+            />
+            <div class="text4-commit-section">
+              <h4>
+                100% SẢN PHẨM<br />
+                ĐÃ ĐƯỢC KIỂM TRA DỊ ỨNG
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of section4 trangchu -->
+
+    <section class="section5-trangchu">
+      <div class="wrapper-section5-trangchu" style="height: 700px">
+        <div class="tieude-section5">
+          <h2>
+            CHÚNG TÔI ĐƯỢC KHUYÊN <br />
+            DÙNG BỞI HƠN 90.000 <br />
+            CHUYÊN GIA <br />
+            CHĂM SÓC DA TRÊN TOÀN <br />
+            THẾ GIỚI
+          </h2>
+        </div>
+        <div class="right">
+          <img
+            src="img/c744788280827b91e892a209d41e54d1 1.png"
+            style="height: 700px"
+            alt="photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Section5 trangchu -->
+
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <a href="#"><img src="img/logo.png" alt="" /></a>
+          </div>
+          <p>
+            Là nhãn hiệu tiên phong trong việc đem lại những <br />
+            đột phá trong lĩnh vực da liễu, La Roche-Posay <br />
+            đem đến cho bạn những dòng sản phẩm đã được <br />
+            thử nghiệm da liễu và được bào chế dành cho làn <br />
+            da nhạy cảm nhất.
+          </p>
+          <div class="icon-footer">
+            <img src="img/image (1) 1.png" alt="icon" />
+          </div>
+        </div>
+
+        <div class="links-container">
+          <h4>Về LAROCHEPOSAY</h4>
+
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>CÔNG TY TNHH L'OREAL VIỆT NAM</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Valery Gaucherand</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Tầng 10, Tòa nhà Vincom, Số 45A đường Lý Tự Trọng
+                <br />
+                và số 72 đường Lê Thánh Tôn, P.Bến Nghé, Q.1, Tp.HCM
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: lorealvietnam@loreal.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of footer -->
+  </body>
+</html>

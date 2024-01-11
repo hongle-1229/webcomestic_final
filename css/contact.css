@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.wrapper-header {
+    display: flex;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+.logo-header{
+    line-height: 90px;
+    padding: 15px 120px;
+    margin-right: 110px;
+}
+header ul{
+    list-style: none;
+}
+.menu-trangchu{
+    overflow: hidden;
+}
+.menu-trangchu a{
+    color: black;
+    display: inline-block;
+    padding: 30px 30px;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.menu-trangchu :hover,
+.menu-trangchu :active {
+    color: #55A8FC;
+    
+}
+.menu1{
+    color: #55A8FC;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.icon-trangchu{
+    overflow: hidden;
+    margin-left: 100px;
+}
+.icon-trangchu a{
+    line-height: 90px;
+    padding-right: 50px;
+    color: black;
+    font-size: 20px;
+}
+.icon-trangchu a:hover,
+.icon-trangchu a:active{
+    color: #55A8FC;
+}
+
+
+/* End of Css Header */
+
+.tong2{
+    display: flex;
+    margin: 10px 120px;
+    background-color: rgb(249, 245, 245);
+    height: 570px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.left{
+    margin: 10px;
+    padding: 10px 20px;
+    height: 550px;
+    background-image: linear-gradient(180deg, #55A8FC 0%, #EAD8FC 100%);
+    border-radius: 20px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.left p{
+    font-size: 24px;
+    color: white;
+}
+
+/* form CSS */
+.thongtin input:focus {
+    outline: none;
+}   
+/* clear focus border */
+.ngoai{
+    padding: 30px 0 10px 28px;
+}
+.phantu{
+    display: flex;
+}
+.phantu i{
+    color: white;
+    padding: 30px 20px 20px;
+    font-size: 24px;
+}
+.phantu p{
+    padding: 28px 0 0 20px;
+}
+.theodoi i{
+    color: white;
+    padding: 50px 10px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.theodoi i:hover{
+    color: red;
+}
+.left h1{
+    color: white;
+    font-size: 36px;
+}
+.right{
+    margin: 50px 20px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.right label{
+    font-size: 20px;
+}
+.mailsdt{
+    display: flex;
+}
+#mail{
+    margin: 10px 0 20px 0;
+    border-top: rgb(249, 245, 245);
+    border-left: rgb(249, 245, 245);
+    border-right: rgb(249, 245, 245);
+    background-color: rgb(249, 245, 245);
+    width: 300px;
+}
+.div2{
+    margin-left: 100px;
+}
+#sdt{
+    margin: 10px 0 20px 0;
+    border-top: rgb(249, 245, 245);
+    border-left: rgb(249, 245, 245);
+    border-right: rgb(249, 245, 245);
+    background-color: rgb(249, 245, 245);
+    width: 300px;
+}
+#chon2{
+    margin-left: 20px;
+}
+#chon3{
+    margin-left: 20px;
+}
+#chon4{
+    margin-left: 20px;
+}
+#name{
+    margin: 10px 0 20px 0;
+    border-top: rgb(249, 245, 245);
+    border-left: rgb(249, 245, 245);
+    border-right: rgb(249, 245, 245);
+    background-color: rgb(249, 245, 245);
+    width: 700px;
+}
+.radio{
+    margin: 0 0 20px 0;
+}
+#khac{
+    margin-bottom: 20px;
+    border-top: rgb(249, 245, 245);
+    border-left: rgb(249, 245, 245);
+    border-right: rgb(249, 245, 245);
+    background-color: rgb(249, 245, 245);
+    width: 400px;
+}
+#feedback{
+    margin: 20px 0;
+    border-top: rgb(249, 245, 245);
+    border-left: rgb(249, 245, 245);
+    border-right: rgb(249, 245, 245);
+    background-color: rgb(249, 245, 245);
+    width: 700px;
+}
+.right p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+#gui{
+    margin: 0 0 0 500px;
+    font-size: 20px;
+    color: white;
+    background-color: #55A8FC;
+    border: #55A8FC;
+    border-radius: 10px;
+    width: 120px;
+    height: 45px;
+}
+/* End of Css tong2 */
+
+.wrapper-footer{
+    display: flex;
+    height: 250px;
+}
+.block1{
+    margin: 20px 0 0 120px;
+}
+.block1 p{
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;
+}
+.block1 .icon-footer{
+    padding-top: 10px;
+}
+.links-container{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.links-container li{
+    padding-top: 5px;
+}
+.links-container a{
+    color: black;
+}
+.links-container h4{
+    padding-bottom: 10px;
+}
+.links-container a:hover{
+    color: #55A8FC;
+}
+.chinhsach a:hover{
+    color:#55A8FC;
+}
+.chinhsach a{
+    color: black;
+}
+.chinhsach{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.chinhsach li{
+    padding-top: 5px;
+}
+.chinhsach h4{
+    padding-bottom: 10px;
+}
+.lienhe{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.lienhe li{
+    padding-top: 5px;
+}
+.lienhe h4{
+    padding-bottom: 10px;
+}
+.follow-container{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.follow-container h4{
+    padding-bottom: 10px;
+}
+.follow-container .icon ul{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.text.links-container{
+    color: black;
+}
+.icon a{
+    font-size: 20px;
+    color: black;
+}
+.icon a:hover{
+    color: red;
+}
+.wrapper-footer p{
+    color: black;
+}
+.wrapper-footer h4{
+    color: black;
+}
+footer ul{
+    list-style: none;
+}
+
+/* End of Css Footer */
+

@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    color: white;
+}
+h4 {
+    color: white;
+}
+
+
+.wrapper-header {
+    display: flex;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+.logo-header{
+    line-height: 90px;
+    padding: 15px 120px;
+    margin-right: 120px;
+}
+header ul{
+    list-style: none;
+}
+.menu-trangchu{
+    overflow: hidden;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.menu-trangchu a{
+    color: black;
+    display: inline-block;
+    padding: 30px 40px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+.menu-trangchu :hover,
+.menu-trangchu :active {
+    color: #55A8FC;
+}
+.menu-trangchu a:active{
+    color: #55A8FC ;
+}
+.icon-trangchu{
+    overflow: hidden;
+    margin-left: 100px;
+}
+.icon-trangchu a{
+    line-height: 90px;
+    padding-right: 50px;
+    color: black;
+    font-size: 20px;
+}
+.icon-trangchu a:hover,
+.icon-trangchu a:active{
+    color: #55A8FC;
+}
+.links-container a:hover{
+    color: #55A8FC;
+}
+.chinhsach a:hover{
+    color:#55A8FC;
+}
+
+/* End of Css Header */
+
+.wrapper-section2-thungay{
+    margin-top: 100px;
+    display: flex;
+    background-image: linear-gradient(180deg, #55A8FC 0%, #EAD8FC 100%);
+}
+.title-section2{
+    width: 100%;
+}
+.title-section2 h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 50px 120px;
+}
+.text-section2{
+    margin: 300px 20px;
+}
+.title-section2 p {
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    padding: 0 120px;
+    font-size: 35px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.section2-thungay {
+    position: relative;
+}
+.scan-section2 {
+    position: absolute;
+    top: 75%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+/* End of Css Section2 */
+
+.wrapper-section3-thungay{
+    height: 300px;
+}
+.wrapper-section3-thungay h2{
+    color:#55A8FC;
+    padding: 20px 0 20px 120px;
+    font-size: 45px;
+    font-weight: 500;
+}
+.wrapper-section3-thungay p{
+    margin: 10px 120px;
+    font-size: 30px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+
+/* End of Css Section3 */
+
+.wrapper-section4-thungay{
+    display: flex;
+    height: 560px;
+    background-image: linear-gradient(180deg, #55A8FC 0%, #EAD8FC 100%);
+}
+.title-section4{
+    width: 100%;
+}
+.title-section4 h2{
+    font-size: 44px;
+    font-weight: 500;
+    padding: 60px 120px;
+    color: white;
+}
+.title-section4 p{
+    color: white;
+    padding: 50px 120px;
+    font-size: 35px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.scan-section4{
+    padding: 40px 100px;
+}
+
+/* End of Css Section4 */
+
+.wrapper-footer{
+    display: flex;
+    height: 250px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.block1{
+    margin: 20px 0 0 120px;
+}
+.block1 p{
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;
+}
+.block1 .icon-footer{
+    padding-top: 10px;
+}
+.links-container{
+    margin: 30px;
+    font-size: 13px;
+}
+.links-container li{
+    padding-top: 5px;
+}
+.links-container a{
+    color: black;
+}
+.links-container h4{
+    padding-bottom: 10px;
+}
+.chinhsach a{
+    color: black;
+}
+.chinhsach{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.chinhsach li{
+    padding-top: 5px;
+}
+.chinhsach h4{
+    padding-bottom: 10px;
+}
+.lienhe{
+    margin: 30px;
+    font-size: 13px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.lienhe li{
+    padding-top: 5px;
+}
+.lienhe h4{
+    padding-bottom: 10px;
+}
+.follow-container{
+    margin: 30px;
+    font-size: 13px;
+}
+.follow-container h4{
+    padding-bottom: 10px;
+}
+.follow-container .icon ul{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.text.links-container{
+    color: black;
+}
+.icon a{
+    font-size: 20px;
+    color: black;
+}
+.icon a:hover{
+    color: red;
+}
+.wrapper-footer p{
+    color: black;
+}
+.wrapper-footer h4{
+    color: black;
+}
+footer ul{
+    list-style: none;
+}
+
+/* End of Css Footer */

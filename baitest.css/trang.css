@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    background-color: antiquewhite;
+}
+.menu-trangchu{
+    display: flex;    
+    margin-top: 20px;
+}
+.menu-trangchu a{
+    color:rgb(139, 168, 242);
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.menu-trangchu a:hover{
+    color: red;
+}
+.button{
+    margin-left: 100px;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    color: aqua;
+    border-color: aqua;
+}
+.logo{
+    margin-right: 250px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+/* End of Header */
+
+.trang2{
+    display: flex;
+    height: 848px;
+    background-color: antiquewhite;
+    border-bottom-left-radius: 50px ;
+}
+.right{
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.right {
+    text-align: center;
+}
+.right h2{
+    font-size: 50px;
+}
+.right p{
+    font-size: 30px;
+}
+.download{
+    font-size: 20px;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(7, 134, 134);
+    border:none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
